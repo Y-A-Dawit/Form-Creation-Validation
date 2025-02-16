@@ -12,12 +12,12 @@ document.addEventListener('DOMContentLoaded', function(){
             const email = emailNew.value.trim();
         
             const userNameNew = document.getElementById('username');
-            const userName = userNameNew.value.trim();
+            const username = userNameNew.value.trim();
         
             let isValid = true; // helps to track validation state, instead of using return statement in each condition
             const messages = []; // without an html element initialized with empty, string it can display error message to warn the client
         
-            if(userName.length < 3) {
+            if(username.length < 3) {
                 isValid = false; // shouldn't use 'let' to assign a new value, if used it will creat a new local scope
                 messages.push('Username is not valid!');
                 // return; // if validation fails, it won't show any error message because messages.push stores the error message inside the array, not show it to the user before the return statement unlike the other form validation code
