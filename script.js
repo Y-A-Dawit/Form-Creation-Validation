@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function(){
         
             feedbackDiv.style.display = "block";
             if(isValid === true) {
-                feedbackDiv.textContent = 'Registration Successful!';
+                feedbackDiv.textContent = 'Registration successful';
                 feedbackDiv.style.color = "#28a745";
                 //return; no - shouldn't use a return statement here, because it prevents form submission. if possible good to use return on input field not like this div element
             } else {
